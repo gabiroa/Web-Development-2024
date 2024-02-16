@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewpoint" content="width=device-width, intial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Header (tailwind is a great tool) -->
+<header class="bg-amber-700">
+    <section class="max-w-screen-md mx-auto flex flex-col md:flex-row gap-6 
+    justify-between items-center py-3">
+        <div>
+          <img src="https://www.kadencewp.com/wp-content/uploads/2020/10/alogo-1.svg" 
+          class="h-16 text-amber-200">
+        </div>
+        <nav class="flex flex-col flex-row gap-8 text-amber-500 uppercase text-sm">
+            <a href="#" class="hover:text-white">Link 1</a>
+            <a href="#" class="hover:text-white">Link 2</a>
+            <a href="#"class="hover:text-white">Link 3</a>
+            <a href="#"class="hover:text-white">Link 4</a>
+        </nav>
+    </section>
+</header>
+<!-- this is the End of Header-->
+<!-- Start Main-->
+<main class="bg-amber-50">
+    <section class="max-w-screen-md mx-auto min-h-full flex flex-col-reverse md:flex-row-reverse justify-between">
+        <article class="h-96 flex flex-row flex-1 items-center p-8">
+            <div>
+            <h1 class="font-bold text-3xl text-amber-900"> Here's our h1 tag!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero totam qui facere explicabo iure eius quibusdam ipsam,
+                 harum rerum aut repellendus voluptatum dolorum suscipit consectetur, mollitia vel, eligendi repellat rem?</p>
+            </div>
+        </article>
+        <article class="flex-1 flex-row p-8 overflow-y-hidden bg-cover bg-center" 
+        style="background-image: url(img/chris-lehr-GxVvunRZxmM-unsplash.jpg);">
+        <div class="text-center text-4xl p-8 w-full h-96 bg-amber-600 bg-opacity-20 text-white">
+            Look at them jump!
+        </div>
+           <img src="img/chris-lehr-GxVvunRZxmM-unsplash.jpg"
+           class="h-96 rounded-full"/>
+        </article>
+    </section>
+</main>
+<main class="grid grid-cols-1 md:grid-cols-3 p-8 gap-8">
+    <div class="h-64 bg-amber-600 rounded-3xl"></div>
+    <div class="h-64 bg-amber-600 rounded-3xl"></div>
+    <div class="h-64 bg-amber-600 rounded-3xl"></div>
+</main>
+</body>
+</html>
