@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Interactive JavaScript Page</title>
+</head>
+<body>
+    <div id="interactiveDiv" style="border: 1px solid rgb(169, 22, 22); padding: 10px; margin: 10px;">
+    Click me to change content!
+</div>
+<script defer>
+    function changeText() {
+        var interactiveDiv = document.getElementById("interactiveDiv");
+        interactiveDiv.textContent = "Text changed!";
+    }
+    
+    document.getElementById("interactiveDiv").addEventListener("click", changeText);
+    console.log("Page loaded");
+    var userInput = prompt("Enter something:");
+    document.getElementById("interactiveDiv").textContent = userInput;
+</script>
+
+</body>
+</html>
